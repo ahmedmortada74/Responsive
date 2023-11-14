@@ -1,0 +1,431 @@
+</html>
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>DAY3</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+
+<body class="bg-light">
+  <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top" data-bs-theme="dark">
+    <div class="container-lg">
+      <a class="navbar-brand" href="#"><img width="30px" height="30px" style="border-radius: 10px;"
+          src="https://picsum.photos/200" alt="">
+       <span id="Login">Login</span> </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Dropdown
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+   
+  </nav>
+  <div class="modal fade bg-success" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" data-backdrop="static" data-keyboard="false">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title" id="myModalLabel" style="color: rgb(70, 0, 3);">Enter your UserName</h4>
+        </div>
+        <div class="modal-body">
+          <label for="" style="color: rgb(105, 0, 9);"> Enter your UserName:</label>
+          <br>
+          <!-- <input type="text"> -->
+          <input type="text" id="usernameInput" placeholder="user name ">
+          <br>
+          <label for="" style="color: rgb(105, 0, 9);"> Enter your password:</label>
+          <br>
+          <input type="text" id="password" placeholder="Ener your password ">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" id="submitButton">submit</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+  <div class="  container ">
+    <div class=" row m-0 container-fluid  bg-light ">
+      <!-- <div class="shadow-lg p-3 mb-5 bg-body-tertiary rounded">Regular shadow</div> -->
+
+      <aside class="  left col-lg-3 col-md-2 col-sm-2  ">
+        <div style="border-radius:5px ;" class="shadow-lg p-3 mb-5 ">
+          <div class=" ">
+            <h5>My Profile</h5>
+            <img width="100px" height="100px" style="border-radius: 50px;" src="https://picsum.photos/200" alt="">
+            <hr>
+            <ul style="list-style:none ;">
+              <li class="d-flex"><i class="fa-solid fa-user"></i> Ahmed Mortada</li>
+              <li class="d-flex"> <i class="fa-solid fa-house fa-bounce"></i> Qena,Qus </li>
+              <li class="d-flex"> <i class="fa-solid fa-cake-candles"></i> Aprel,1993 </li>
+            </ul>
+          </div>
+          <hr>
+        </div>
+        <div style="border-radius:5px ;" class="shadow-lg p-3 mb-5 bg-secondary">
+          <select class="form-select bg-secondary" aria-label="Default select example">
+            <option selected> My Group</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+          </select>
+          <select class="form-select bg-secondary" aria-label="Default select example">
+            <option selected>My Events</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+          </select>
+          <select class="form-select bg-secondary" aria-label="Default select example">
+            <option selected>My photos</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+          </select>
+
+          <!-- <ul style="border-radius:5px ;" class=" list-group ">
+                    <li class="list-group-item bg-secondary"> <i class="fa-solid fa-user"></i> My Group </li>
+                    <li class="list-group-item bg-secondary"><i class="fa-regular fa-calendar-days"></i>  My Events  </li>
+                    <li class="list-group-item bg-secondary"><i class="fa-regular fa-image"></i> My photos </li>
+                  </ul> -->
+        </div>
+        <!-- <div class=" shadow-lg p-3 mb-5 bg-secondary">
+                <ul style="list-style:none ;" >
+                    <li> <i class="fa-solid fa-user"></i> My Group </li>
+                    <li> <i class="fa-solid fa-user"></i> My Events </li>
+                    <li> <i class="fa-solid fa-user"></i> My photos </li>
+                </ul>
+            </div> -->
+        <div style="border-radius:5px ;" class="shadow-lg p-3 mb-5 col-11">
+          <h3>Intrests</h3>
+          <span class="badge text-bg-secondary">HTML</span>
+          <span class="badge text-bg-secondary">JAVA</span>
+          <span class="badge text-bg-secondary">Reding</span>
+          <span class="badge text-bg-secondary">progrmming</span>
+          <span class="badge text-bg-secondary">HTML</span>
+          <span class="badge text-bg-secondary">CSS</span>
+          <span class="badge text-bg-secondary">DATA</span>
+          <span class="badge text-bg-secondary">CSS</span>
+          <span class="badge text-bg-secondary">Reding</span>
+          <span class="badge text-bg-secondary">progrmming</span>
+          <!-- <button type="button" class="btn btn-dark">News</button>
+                <button type="button" class="btn btn-dark">W3 school</button>
+                <button type="button" class="btn btn-dark">la</button>
+                <button type="button" class="btn btn-dark">HTML</button>
+                <button type="button" class="btn btn-dark">CSS</button>
+                <button type="button" class="btn btn-dark">JAVA</button>
+                <button type="button" class="btn btn-dark">DATA</button>
+                <button type="button" class="btn btn-dark">RED</button>
+                <button type="button" class="btn btn-dark">OPRATING</button> -->
+        </div>
+
+        <div style="border-radius:5px ;" class="shadow-lg p-3 mb-5 col-11">
+          <h3>Hey!</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum laborum pariatur iusto sequi consequatur
+            optio, repellendus blanditiis, corrupti quas ex delectus, voluptatem quibusdam obcaecati illo impedit
+            temporibus eos inventore nihil?</p>
+        </div>
+
+      </aside>
+
+
+      <div class="  col-lg-7  col-md-8  col-sm-8   ">
+        <section class="bg-primary">
+
+        </section>
+        <section style="border-radius:5px ;" class="shadow-lg p-3 mb-5 ">
+          <div class="">
+            <p>
+              Social Media template by w3.css
+            </p>
+            <p style="border: 1px solid;">
+              Status: Feeling Blue
+            </p>
+            <p>
+              <button type="submit" class="btn bg-secondary  ">post</button>
+            </p>
+
+          </div>
+        </section>
+        <section style="border-radius:5px ;" class=" shadow-lg p-3 mb-5">
+
+          <div id="post">
+            <div class="  d-flex  mb-3">
+              <div class="p-2"><img width="50px" height="50px" src="https://picsum.photos/200" class="rounded-circle">
+              </div>
+              <div class="p-2">Ahmed Abdelgaber</div>
+              <div class="ms-auto p-2">1 min</div>
+            </div>
+            <!-- <div class="shadow-lg p-3 mb-5">
+                      <img width="50px" height="50px" style="border-radius: 50px;" src="https://picsum.photos/200" alt="">
+                      <span class="p-3">John Doe</span>
+                      <span style="text-align: right;">32 min</span>
+ -->
+
+            <hr>
+            <p>
+              Lorem ipsum dolor amet, consectetur adipisicing elit,<br>
+              sed do eiusmod tempor incididunt ut labor et dolore ,<br>
+              magna aliqua. Ut enim ad minim veniam, quis nostrud ,<br>
+              exercitation ullamco laboris nisi ut aliquip ex ea .,<br>
+            </p>
+            <div class="">
+
+
+              <img src="https://picsum.photos/200" class="rounded float-start" alt="...">
+              <img src="https://picsum.photos/200" style="margin-left: 150px;" alt="...">
+
+              <br><br><br><br><br><br>
+              <!-- <br><br><br><br><br><br> -->
+
+
+              <div class="d-grid gap-2 d-md-block">
+                <button class="bg-secondary" type="button" style="border-radius:7px ;">&#128525</button>
+                <button class="bg-secondary" type="button" style="border-radius:7px ;">Comment</button>
+              </div>
+            </div>
+          </div>
+
+        </section>
+        <section style="border-radius:5px ;" class=" shadow-lg p-3 mb-5">
+          <div class="">
+            <div class="  d-flex  mb-3">
+              <div class="p-2"><img width="50px" height="50px" src="https://picsum.photos/200" class="rounded-circle">
+              </div>
+              <div class="p-2">Angie Jane</div>
+              <div class="ms-auto p-2">25 min</div>
+            </div>
+
+            <!-- <img width="50px" height="50px" style="border-radius: 50px;"  src="https://picsum.photos/200" alt="">
+                       <span class="p-3">Angie Jane</span>
+                       <span class="ms-auto p-2">32 min</span> -->
+            <hr>
+            <p>
+              Have you seen this?
+            </p>
+            <!-- <img width="100%" height="300px" src="https://picsum.photos/200" alt=""> -->
+            <p>
+              Lorem ipsum dolor amet, consectetur adipisicing elit,
+              sed do eiusmod tempor incididunt ut labor et dolore
+              magna aliqua. Ut enim ad minim veniam, quis nostrud
+              exercitation ullamco laboris nisi ut aliquip ex ea
+            </p>
+            <hr>
+            <br><br>
+            <div class="d-grid gap-2 d-md-block">
+              <button class="bg-secondary" type="button" style="border-radius:7px ;">&#129392</button>
+              <button class="bg-secondary" type="button" style="border-radius:7px ;">Comment</button>
+            </div>
+          </div>
+
+
+        </section>
+        <section style="border-radius:5px ;" class=" shadow-lg p-3 mb-5">
+          <div class="">
+            <div class="  d-flex  mb-3">
+              <div class="p-2"><img width="50px" height="50px" src="https://picsum.photos/200" class="rounded-circle">
+              </div>
+              <div class="p-2">Ahmed Mortada</div>
+              <div class="ms-auto p-2">Just Now</div>
+            </div>
+
+            <!-- <img width="50px" height="50px" style="border-radius: 50px;"  src="https://picsum.photos/200" alt="">
+                       <span class="p-3">Ahmed Mortada</span>
+                       <span class="ms-auto p-2"> Just Now</span> -->
+            <hr>
+            <p>
+              Have you seen this?
+            </p>
+            <div id="carouselExampleCaptions" class="carousel slide">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                  aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                  aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                  aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+                  aria-label="Slide 4"></button>
+
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img height="300px" src="./baby-groot-4k-hd-superheroes-wallpaper-thumb.jpg" class="d-block w-100"
+                    alt="...">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>First slide label</h5>
+                    <p>Some representative placeholder content for the first slide.</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img height="300px" src="./digital-digital-art-artwork-illustration-minimalism-hd-wallpaper-thumb.jpg"
+                    class="d-block w-100" alt="...">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Second slide label</h5>
+                    <p>Some representative placeholder content for the second slide.</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img height="300px" src="./adult-education-leave-know-power.jpg" class="d-block w-100" alt="...">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Third slide label</h5>
+                    <p>Some representative placeholder content for the second slide.</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img height="300px" src="./baby-groot-4k-hd-superheroes-wallpaper-thumb.jpg" class="d-block w-100"
+                    alt="...">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Four slide label</h5>
+                    <p>Some representative placeholder content for the third slide.</p>
+                  </div>
+                </div>
+              </div>
+              <hr>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+            <br><br>
+            <div class="d-grid gap-2 d-md-block">
+              <button class="bg-secondary" type="button" style="border-radius:7px ;">&#128077</button>
+              <button class="bg-secondary" type="button" style="border-radius:7px ;">Comment</button>
+            </div>
+          </div>
+
+          <br>
+          <br> <br> <br> <br> <br> <br>
+
+        </section>
+
+
+      </div>
+
+
+      <aside class="right col-lg-2 col-md-2 col-sm-2  ">
+        <div style="border-radius:5px ;" class="shadow-lg p-3 mb-5">
+          <p>
+            Upcoming Events:
+          </p>
+          <img width="100%" src="https://picsum.photos/200" alt="">
+          <h6>Holiday</h6>
+          Friday 15:00
+          <div class="d-grid gap-2">
+
+            <button class="bg-secondary" type="button" style="border-radius:7px ;">Info</button>
+          </div>
+        </div>
+        <hr>
+
+        <div style="border-radius:5px ;" class="shadow-lg p-3 mb-5">
+          <p>
+            Friend Request
+
+          </p>
+          <img width="100%" src="https://picsum.photos/200" alt="">
+          <p>Jane Doe</p>
+
+
+          <div class="btn-group" role="group" aria-label="Basic mixed styles example">
+            <button type="button" class="btn btn-danger">✖</button>
+
+            <button type="button" class="btn btn-success">✔</button>
+          </div>
+
+        </div>
+        <hr>
+
+        <div style="border-radius:5px ;" class="shadow-lg p-3 mb-5">
+          <p>
+            SDL
+          </p>
+        </div>
+        <hr>
+
+        <div style="height: 100px; border-radius:5px ;" class=" shadow-lg p-3 mb-5 container ">
+          <br>
+          <i s class="fa-solid fa-bug " style="font-size: 60px; margin-left: 30px;"></i>
+
+        </div>
+
+      </aside>
+      <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br><br> <br> <br> <br>
+      <br> <br> <br> <br> <br> <br> <br><br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+    </div>
+
+
+  </div>
+
+  <footer class=" bg-secondary">
+    <p>Powered by w3.css </p>
+    <footer class=" bg-success">
+      <p></p>
+    </footer>
+  </footer>
+
+
+
+  <script src="https://kit.fontawesome.com/cae837aa38.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function() {
+       $('#Login').click(function() {
+         $('#myModal').modal('show');
+       });
+    
+       $('#submitButton').click(function() {
+         var username = $('#usernameInput').val();
+     
+         $('#Login').text(username);
+     
+  
+         $('#myModal').modal('hide');
+       });
+     });
+     
+       </script>
+
+</body>
+
+</html>

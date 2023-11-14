@@ -1,0 +1,105 @@
+/* *{
+    margin: 0px;
+} */
+header{
+background-color: rgb(210, 247, 248);
+/* padding: 20px; */
+}
+img{
+    width: 100%;
+    height: 200px;
+}
+.row
+{
+    display: flex;
+   /* border: 1px solid; */
+   justify-content:space-around;
+ 
+}
+/* .col-4{
+    border: 1px solid;
+    h
+} */
+.ahmed3{
+    display: flex;
+    justify-content:space-around;
+    /* border: 1px solid; */
+}
+.ahmed4{
+    background-color: rgb(128, 128, 128);
+    /* padding: 100px; */
+    height: 200px;
+}
+.a1,.a2{
+    margin-left: 80px;
+}
+.a4{
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    margin-left: 80px;
+}
+.a5{
+    display: flex;
+}
+.a6{
+    margin-left: 40px;
+}
+.ahmed5{
+    background-color: rgb(59, 77, 60);
+    padding: 20px;
+    text-align: center;
+}
+.x1,.x3{
+    display: flex;
+}
+.x2{
+ width: 80px;
+    height: 80px;
+    margin-left: 5px;
+}
+.z{
+    text-align: center;
+    border: 1px solid;
+}
+.g{
+  display: flex;
+
+   justify-content: space-around;
+   
+
+}
+.o{
+    width: 50px ;
+    height: 50px;
+   border-radius: 50px;
+}
+.pp { 
+   display: flex;
+     margin-left: 45%;
+     /* font-size: 16px; */
+    /* margin: 10px; */
+  /* justify-content: right; */
+    /* text-align: right; */
+ }
+
+
+
+
+
+.col-1 {width: 6.25%;}
+.col-2 {width: 12.5%;}
+.col-3 {width: 18.75%;}
+.col-4 {width: 25%;}
+.col-5 {width: 31.25%;}
+.col-6 {width: 37.5;}
+.col-7 {width: 43.75%;}
+.col-8 {width: 50%;}
+.col-9 {width: 56.25%;}
+.col-10 {width: 62.5%;}
+.col-11 {width: 68.75%;}
+.col-12 {width: 75%;}
+.col-13 {width: 81.25%;}
+.col-14 {width: 87.5%;}
+.col-15 {width: 93.75%;}
+.col-16 {width: 100%;}
